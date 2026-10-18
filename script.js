@@ -1,6 +1,7 @@
-const menu = document.getElementsByClassName("burger");
-const splmenu = document.getElementsByClassName("nav-links");
+const menuButton = document.querySelector(".burger");
+const navLinks = document.querySelector(".nav-links");
 
-document.addEventListener("click", () => {
-    menu.classList.toggle("showmenu");
-})
+menuButton.addEventListener("click", () => {
+    const menuIsOpen = navLinks.classList.toggle("showmenu");
+    menuButton.setAttribute("aria-expanded", menuIsOpen);
+});
