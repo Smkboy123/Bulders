@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 
@@ -28,16 +28,17 @@ body {
     border: 0;
     background: transparent;
     cursor: pointer;
+   
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     font-weight: bold;
 }
 
 .logo span {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: white;
 }
 
@@ -56,13 +57,13 @@ ul li a {
 
 ul li a:hover {
     border-bottom: 2px solid white;
-    transition: 1000ms;
+    transition: 900ms;
 }
 .welco{
     background: url(assets/banner2.jpg) center/cover ;
     width: 100%;
     min-height: 420px;
-    padding-bottom: 24px;
+    padding-bottom: 10px;
 }
 
 h1 {
@@ -79,7 +80,7 @@ h3 {
     border-bottom: 2px solid;
     border-width: 5px;
     color: goldenrod;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-family:Tahoma, sans-serif
 }
 
@@ -120,21 +121,31 @@ button {
 }
 
 .navbar>img {
-    width: 17px;
-    height: 15px;
-    margin-bottom: -25px;
-    margin-left: 25px;
+    width: 40px;
+    height: 45px;
+    margin-bottom: -5px;
+    margin-left: 30px;
 }
 
 #second-para {
     background: url(assets/choose_bg.jpg) center/cover;
-
 }
 
 #second-para p {
   color: aqua;
   
 }
+ #third-para{
+        margin: 2%;
+    }
+     #third-para-content{
+        margin: 15px;
+      display: flex;
+    }
+     #third-para-content>p{
+        color: #000;
+        margin-left: 20px;
+     }
 #intro>p{
 color: #000;
 }
@@ -186,7 +197,7 @@ input[ type="submit"] {
     transition: ease-in 0.2s;
 }
 input[ type="submit"]:hover{
-    background: rgb(145, 105, 4);
+    background: rgb(180, 131, 7);
 }
 .contact{
     display: flex;
@@ -208,8 +219,7 @@ form>p {
     text-align-last: center;
     font-weight: bold;
 }
-
-/* Adaptation pour tablettes et téléphones */
+/* Rendre responsive pour les tablette */
 @media screen and (max-width: 768px) {
     .burger {
         display: block;
@@ -220,8 +230,14 @@ form>p {
         display: block;
         width: 28px;
         height: 28px;
+        
     }
-
+.navbar>img {
+    width: 40px;
+    height: 45px;
+    margin-bottom: -2px;
+    margin-left: 50px;
+}
     .nav-links {
         display: none;
         position: absolute;
@@ -248,8 +264,17 @@ form>p {
     #second-para,
     .allcontact {
         width: 100%;
+        margin: 2%;
     }
-
+    #third-para{
+        margin: 2%;
+    }
+    #third-para-content{
+        margin: 0px;
+    }
+     #third-para-content>img{
+        display: none;
+     }
     h1 {
         margin-top: 50px;
         font-size: clamp(2rem, 8vw, 3rem);
@@ -275,7 +300,7 @@ form>p {
     }
 
     .contact > img {
-        width: min(70%, 280px);
+         width: min(70%, 280px);
         margin: 0 auto 20px;
     }
 
