@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="my.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
+    <header class="header">
+        <div class="navigation">
             <img src="assets/ser1.png" alt="Logo Bulders">
             <div class="logo"><span>B</span>ulders</div>
-            <nav class="nav-links" aria-label="Navigation principale">
+            <nav class="nav" aria-label="Navigation principale">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="realisations.html">Réalisations</a></li>
@@ -20,15 +20,15 @@
                     <li><a class="active" href="rendez-vous.html" aria-current="page">Rendez-vous</a></li>
                 </ul>
             </nav>
-            <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
-                <span></span><span></span><span></span>
+            <button class="bouton-menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <img src="assets/hamburger-menu.png" alt="Ouvrir le menu" width="28" height="28">
             </button>
         </div>
     </header>
 
     <main>
-        <section class="appointment-page" id="rendez-vous">
-            <div class="appointment-heading">
+        <section class="page-rendez-vous" id="rendez-vous">
+            <div class="entete-rendez-vous">
                 <p>Parlons de votre projet</p>
                 <h1>Prendre rendez-vous</h1>
                 <span>Décrivez-nous vos besoins, nous vous proposerons une première date d’échange.</span>
@@ -48,14 +48,14 @@
                     <textarea name="motif" id="motif" rows="4" placeholder="Décrivez brièvement votre projet ou votre demande" required></textarea>
                     <input type="submit" value="Envoyer la demande">
                 </form>
-                <aside class="appointment-aside">
-                    <img src="assets/project_img2.png" alt="Accompagnement d'un projet de construction">
+                <aside class="encart-rendez-vous">
+                    <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=900&q=80" alt="Accompagnement d'un projet de construction">
                     <div><strong>Une première écoute attentive</strong><p>Nous étudions vos objectifs avant de vous conseiller sur les prochaines étapes.</p></div>
                 </aside>
             </div>
         </section>
     </main>
-    <footer class="site-footer"><p>© Bulders — Construire avec confiance.</p><a href="index.html">Retour à l’accueil</a></footer>
+    <footer class="footer"><p>© Bulders — Construire avec confiance.</p><a href="index.html">Retour à l’accueil</a></footer>
     <script src="script.js"></script>
 </body>
 </html>

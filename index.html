@@ -5,101 +5,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>Bulders | Construction & rénovation</title>
     <link rel="stylesheet" href="my.css">
 </head>
 
 <body>
-    <div class="welco">
-        <header>
-            <div class="navbar"> <img src="assets/ser1.png" alt="logo">
-                <div class="logo">
-                    <span>B</span>ulders
+    <header class="header">
+        <div class="navigation">
+            <img class="icone-marque" src="assets/ser1.png" alt="Logo Bulders">
+            <div class="logo">
+                <span>B</span>ulders
+            </div>
+            <nav class="nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                    <li><a href="rendez-vous.html">Rendez-vous</a></li>
+                </ul>
+            </nav>
+            <button class="bouton-menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <img src="assets/hamburger-menu.png" alt="Ouvrir le menu" width="28" height="28">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="banniere">
+            <div class="contenu-banniere">
+                <p class="surtitre">Construction & rénovation</p>
+                <h1>Bienvenue chez</h1>
+                <h2>Bulders</h2>
+                <p class="texte-banniere">Rénovation, extension, gros œuvre et aménagement sur mesure.</p>
+                <div class="groupe-actions">
+                    <a class="bouton-principal" href="rendez-vous.html">Demander un devis</a>
+                    <a class="bouton-secondaire" href="realisations.html">Voir nos réalisations</a>
                 </div>
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="index.html" aria-current="page">Accueil</a></li>
-                        <li><a href="realisations.html">Réalisations</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="equipe.html">Équipe</a></li>
-                        <li><a href="rendez-vous.html">Rendez-vous</a></li>
-                    </ul>
+                <p class="meta-banniere">Devis gratuit • Qualité garantie • Suivi de chantier</p>
+            </div>
+        </section>
+
+        <section id="apropos">
+            <h4>À propos de notre entreprise</h4>
+            <div class="contenu-apropos">
+                <div class="copie-apropos">
+                    <p>Fondée autour d’une exigence commune, Bulders est une entreprise de construction qui accompagne particuliers, professionnels et investisseurs dans la réalisation de leurs projets. Nous intervenons sur la rénovation, l’aménagement et les travaux neufs, avec une attention constante portée à la qualité des matériaux et aux détails d’exécution.</p>
+                    <p>Notre méthode repose sur une première écoute attentive, un devis clair et un suivi du chantier assuré par des artisans engagés. Chaque étape est organisée afin de vous offrir une expérience simple, maîtrisée et fidèle à vos objectifs.</p>
+                    <a class="bouton-secondaire" href="equipe.html">Découvrir l’entreprise</a>
                 </div>
-                <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <img src="assets/project-gallery/project-03.jpg" alt="Équipe Bulders réalisant un chantier de construction">
             </div>
-        </header>
+        </section>
 
-        <div class="hero-content">
-            <h1>Bienvenue chez</h1>
-            <h3>Bulders</h3>
-            <p>Nous transformons vos idées en espaces durables et soignés. De l’étude de faisabilité à la réception des travaux, notre équipe accompagne chaque projet avec rigueur, transparence et respect des délais.</p>
-        </div>
-    </div>
-    <section id="compa">
-        <h4>À propos de notre entreprise</h4>
-        <div id="intro">
-            <div class="intro-copy">
-                <p>Fondée autour d’une exigence commune, Bulders est une entreprise de construction qui accompagne particuliers, professionnels et investisseurs dans la réalisation de leurs projets. Nous intervenons sur la rénovation, l’aménagement et les travaux neufs, avec une attention constante portée à la qualité des matériaux et aux détails d’exécution.</p>
-                <p>Notre méthode repose sur une première écoute attentive, un devis clair et un suivi du chantier assuré par des artisans engagés. Chaque étape est organisée afin de vous offrir une expérience simple, maîtrisée et fidèle à vos objectifs.</p>
-                <button type="button">Découvrir l’entreprise</button>
+        <section id="avantages">
+            <h4>Pourquoi choisir Bulders ?</h4>
+            <p>Nous allions savoir-faire technique et accompagnement humain. Votre conseiller reste disponible tout au long du projet pour vous tenir informé de l’avancement, des choix à prendre et des éventuels ajustements. Nos équipes utilisent des méthodes éprouvées et respectent les normes de sécurité et de finition.</p>
+            <ul class="liste-avantages" aria-label="Nos engagements">
+                <li>Devis détaillé et calendrier réaliste</li>
+                <li>Artisans qualifiés et suivi de chantier</li>
+                <li>Solutions adaptées à votre budget</li>
+                <li>Finitions soignées et respect des délais</li>
+            </ul>
+            <h5>Votre projet mérite une équipe engagée.</h5>
+            <a class="bouton-action" href="rendez-vous.html">Parler à notre équipe</a>
+        </section>
+
+        <section id="services">
+            <h4>Découvrez nos services</h4>
+            <div class="contenu-services">
+                <img src="assets/project-gallery/project-09.jpg" alt="Véhicule de chantier Bulders">
+                <div class="copie-services">
+                    <p>Nous prenons en charge les travaux de gros œuvre, les rénovations complètes, les extensions, les aménagements intérieurs et les finitions. Du conseil technique à la livraison du chantier, nous coordonnons les corps de métier pour assurer la continuité des travaux.</p>
+                    <p>Besoin d’une estimation, d’une étude de faisabilité ou de conseils sur les matériaux ? Rencontrons-nous pour définir ensemble une solution adaptée à vos besoins et à votre calendrier.</p>
+                </div>
             </div>
-            <img src="assets/about.png" alt="Équipe Bulders réalisant un chantier de construction">
-        </div>
-    </section>
+        </section>
 
+        <section class="section-realisations-apercu" aria-labelledby="titre-realisations-apercu">
+            <div class="titre-section">
+                <p>Quelques exemples</p>
+                <h2 id="titre-realisations-apercu">Nos réalisations</h2>
+                <span>Ces images sont temporaires et pourront être remplacées par vos photos de chantier.</span>
+            </div>
+            <div class="grille-apercu">
+                <article class="carte-projet">
+                    <img src="assets/project-gallery/project-06.jpg" alt="Réalisation de maison Bulders">
+                    <div>
+                        <p>Rénovation</p>
+                        <h3>Un espace remis au goût du jour</h3>
+                        <span>Remplacez ce texte par la description d’un vrai chantier.</span>
+                    </div>
+                </article>
+                <article class="carte-projet">
+                    <img src="assets/project-gallery/project-07.jpg" alt="Chantier de construction Bulders">
+                    <div>
+                        <p>Construction</p>
+                        <h3>Un projet préparé avec soin</h3>
+                        <span>Ajoutez le type de travaux et les détails du projet.</span>
+                    </div>
+                </article>
+                <article class="carte-projet">
+                    <img src="assets/project-gallery/project-10.jpg" alt="Aménagement intérieur Bulders">
+                    <div>
+                        <p>Aménagement</p>
+                        <h3>Des finitions pensées pour durer</h3>
+                        <span>Utilisez une photo et des informations réelles du chantier.</span>
+                    </div>
+                </article>
+            </div>
+            <a class="bouton-action" href="realisations.html">Voir toutes nos réalisations</a>
+        </section>
 
-    <section id="second-para">
-        <h4>Pourquoi choisir Bulders ?</h4>
-        <p>Nous allions savoir-faire technique et accompagnement humain. Votre conseiller reste disponible tout au long du projet pour vous tenir informé de l’avancement, des choix à prendre et des éventuels ajustements. Nos équipes utilisent des méthodes éprouvées et respectent les normes de sécurité et de finition.</p>
-        <ul class="advantages" aria-label="Nos engagements">
-            <li>Devis détaillé et calendrier réaliste</li>
-            <li>Artisans qualifiés et suivi de chantier</li>
-            <li>Solutions adaptées à votre budget</li>
-            <li>Finitions soignées et respect des délais</li>
-        </ul>
-        <h5>Votre projet mérite une équipe engagée.</h5>
-        <a class="cta-button" href="rendez-vous.html">Parler à notre équipe</a>
+        <section class="section-etapes" aria-labelledby="titre-etapes">
+            <div class="titre-section">
+                <p>Un accompagnement clair</p>
+                <h2 id="titre-etapes">Comment se déroule votre projet ?</h2>
+            </div>
+            <ol class="grille-etapes">
+                <li>
+                    <span>01</span>
+                    <h3>Échange</h3>
+                    <p>Nous prenons le temps de comprendre vos besoins, vos contraintes et vos idées.</p>
+                </li>
+                <li>
+                    <span>02</span>
+                    <h3>Devis et planification</h3>
+                    <p>Nous définissons ensemble les travaux, le budget et les grandes étapes du projet.</p>
+                </li>
+                <li>
+                    <span>03</span>
+                    <h3>Travaux et livraison</h3>
+                    <p>Nous suivons le chantier jusqu’aux finitions et à la réception des travaux.</p>
+                </li>
+            </ol>
+        </section>
 
-    </section>
-    <section id="third-para">
-        <h4>Découvrez nos services</h4>
-        <div id="third-para-content">
-            <img src="assets/truck.png" alt="Véhicule de chantier Bulders" >
-            <div class="services-copy">
-                <p>Nous prenons en charge les travaux de gros œuvre, les rénovations complètes, les extensions, les aménagements intérieurs et les finitions. Du conseil technique à la livraison du chantier, nous coordonnons les corps de métier pour assurer la continuité des travaux.</p>
-                <p>Besoin d’une estimation, d’une étude de faisabilité ou de conseils sur les matériaux ? Rencontrons-nous pour définir ensemble une solution adaptée à vos besoins et à votre calendrier.</p>
+        <section class="section-avis" aria-labelledby="titre-avis">
+            <div class="titre-section">
+                <p>La parole à nos clients</p>
+                <h2 id="titre-avis">Ils nous ont fait confiance</h2>
+            </div>
+            <div class="grille-avis">
+                <article class="carte-avis">
+                    <h3>Rénovation complète de notre maison</h3>
+                    <p>« Bulders a rénové notre maison de fond en comble avec beaucoup de sérieux. Le chantier a été bien organisé, la communication claire et la finition impeccable. »</p>
+                    <span>Aminata S., Bamako</span>
+                </article>
+                <article class="carte-avis">
+                    <h3>Travaux de qualité et délais respectés</h3>
+                    <p>« Nous avons fait construire une extension pour notre bureau. L’équipe a su respecter le calendrier, proposer des solutions pratiques et livrer un résultat propre et durable. »</p>
+                    <span>Moussa T., Koulikoro</span>
+                </article>
+                <article class="carte-avis">
+                    <h3>Professionnalisme dès la première visite</h3>
+                    <p>« Le devis était clair, les conseils utiles et le suivi du chantier très rassurant. Nous recommandons Bulders pour les travaux de rénovation et d’aménagement. »</p>
+                    <span>Sory K., Sikasso</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-contact" id="rendez-vous">
+            <h2>Prendre rendez-vous</h2>
+            <div class="contact">
+                <form class="formulaire-contact" action="" method="get">
+                    <p>Parlez-nous de votre projet</p>
+                    <label for="NomPre">Nom et prénom</label>
+                    <input type="text" name="NomPre" id="NomPre" required>
+
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email">
+
+                    <label for="Tel">Téléphone</label>
+                    <input type="tel" name="Tel" id="Tel" required>
+
+                    <label for="dt">Choisir l'heure du RDV</label>
+                    <input type="datetime-local" name="dt" id="dt" required>
+
+                    <label for="motif">Description / motif du RDV</label>
+                    <textarea name="motif" id="motif" rows="4" placeholder="Décrivez brièvement votre projet ou votre demande" required></textarea>
+
+                    <input type="submit" value="Demander un devis">
+                </form>
+                <img class="image-contact" src="assets/project-gallery/project-11.jpg" alt="Illustration de chantier Bulders">
+            </div>
+            <hr>
+        </section>
+    </main>
+
+    <footer class="footer footer-accueil">
+        <div class="contenu-pied-page">
+            <div>
+                <a class="logo logo-pied-page" href="index.html">Bulders</a>
+                <p>Construction, rénovation et aménagement : parlons de votre projet.</p>
+            </div>
+            <div>
+                <h2>Nous contacter</h2>
+                <p>Téléphone : +223 76 12 34 56</p>
+                <p>Email : legenisam@gmail.com</p>
+                <p>Zone d’intervention : Bamako, Koulikoro, Sikasso, Ségou, Mopti, Kayes, Tombouctou, Gao, Kidal</p>
+            </div>
+            <div>
+                <h2>Navigation</h2>
+                <a href="services.html">Nos services</a>
+                <a href="realisations.html">Nos réalisations</a>
+                <a href="rendez-vous.html">Prendre rendez-vous</a>
             </div>
         </div>
-    </section>
+        <p class="mention-pied-page">© Bulders — Construire avec confiance.</p>
+    </footer>
 
-    <section class="allcontact" id="rendez-vous">
-        <h2>Prendre rendez-vous</h2>
-        <div class="contact">
-            <form action="" method="get">
-                <p>Parlez-nous de votre projet</p>
-                <label for="NomPre">Nom et prénom</label><br>
-                <input type="text" name="NomPre" id="NomPre" required><br><br>
-                <label for="Email">Email</label><br>
-                <input type="email" name="Email" id="Email"><br><br>
-                <label for="Tel">Téléphone</label><br>
-                <input type="tel" name="Tel" id="Tel" required><br><br>
-                <label for="dt">Choisir l'heure du RDV</label><br>
-                <input type="datetime-local" name="dt" id="dt" required><br><br>
-                <label for="motif">Description / motif du RDV</label><br>
-                <textarea name="motif" id="motif" rows="4" placeholder="Décrivez brièvement votre projet ou votre demande" required></textarea><br><br>
-                <input type="submit" value="Valider">
-            </form>
-            <img src="assets/project_img2.png" alt="">
-        </div>
-        <hr>
-    </section>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-<footer>
-</footer>
 
 </html>
